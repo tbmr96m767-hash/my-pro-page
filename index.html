@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>わたしのプリページ</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+<body>
+
+  <button id="backBtn" style="display:none;">← もどる</button>
+
+  <!-- スタート画面まとめ -->
+  <div id="startScreen">
+
+    <div class="puri"></div>
+
+    <h1>プリメーカー</h1>
+
+    <div id="start">
+      <button id="startBtn">スタート</button>
+    </div>
+
+  </div>
+
+  <!-- フレームえらび画面 -->
+  <div id="select" style="display:none;">
+    <p>フレームをえらんでね</p>
+    <div class="frame">フレーム①</div>
+    <div class="frame">フレーム②</div>
+    <div class="frame">フレーム③</div>
+  </div>
+
+  <!-- プリ画面 -->
+<div id="puri" style="display:none;">
+  <p>プリをとろう！</p>
+  <div id="puriFrame">
+    <video id="camera" autoplay playsinline></video>
+  </div>
+
+  <!-- カウントダウン表示 -->
+  <p id="countdown" style="font-size: 50px; text-align:center; color:red;"></p>
+
+  <!-- 写真を撮るボタン -->
+  <button id="snapBtn">写真を撮る</button>
+
+  <!-- 撮った写真を表示 -->
+  <div id="photoResult">
+    <img id="photo" style="margin-top:10px; max-width:100%; border:2px solid pink;">
+  </div>
+
+</div>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
